@@ -1,0 +1,3 @@
+autoload_server_per_game_count: 3
+max_server_per_game: 5
+min_server_per_game: 1
