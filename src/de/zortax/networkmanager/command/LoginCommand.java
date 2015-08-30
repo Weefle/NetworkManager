@@ -7,7 +7,7 @@ public class LoginCommand extends Command{
 	
 	public LoginCommand(){
 		this.name = "login";
-		this.description = "Einloggen von Gameservern. Kann nicht über die Konsole ausgeführt werden.";
+		this.description = "Log in of gameservers. Can't be used by console";
 		this.usage = "login <gamemode> <ID> <phase>";
 	}
 	
@@ -27,7 +27,7 @@ public class LoginCommand extends Command{
 			}
 			
 		}else{
-			Main.log.write("Dieser Befehl kann nur von Gameserver ausgeführt werden.");
+			Main.log.write("This command can only be executed by gameservers");
 		}
 		
 	}

@@ -9,7 +9,7 @@ public class DebugCommand extends Command {
 
 	public DebugCommand(){
 		this.name = "debug";
-		this.description = "Nur so ein unnötiger Testbefehl";
+		this.description = "List all servers and their state";
 		this.usage = "debug";
 	}
 	

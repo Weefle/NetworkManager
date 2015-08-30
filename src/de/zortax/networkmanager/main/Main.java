@@ -36,19 +36,19 @@ public class Main {
 		
 		Runtime.getRuntime().addShutdownHook(new Thread() { 
             public void run() { 
-            	log.write("Stoppe Gameserver...");
+            	log.write("Stopping Gameserver...");
             	for(Gamemode c : man.modes){
             		for(Gameserver c1 : c.servers){
             			c1.stop();
             		}
             	}
-            	log.write("Stoppe Networkmanager...");
+            	log.write("Stopping Networkmanager...");
             } 
         }); 
 		
 		try {
 			log = new Logger("networkmanager.log");
-			log.write("Logger gestartet!");
+			log.write("Logger started!");
 			
 			Properties prop = System.getProperties();
 			log.write(prop.getProperty("os.name") + " erkannt.");

@@ -12,7 +12,7 @@ public class RestartCommand
   public RestartCommand()
   {
     this.name = "restart";
-    this.description = "Restartet einen Server";
+    this.description = "Restarts a server";
     this.usage = "restart <id>";
   }
   

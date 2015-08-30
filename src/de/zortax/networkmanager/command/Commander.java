@@ -33,7 +33,7 @@ public class Commander {
 			}
 		}
 		
-		Main.log.write("Unbekannter Befehl (" + sender.name + ").");
+		Main.log.write("Unknown command (" + sender.name + ").");
 		
 		
 	}

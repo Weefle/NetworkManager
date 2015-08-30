@@ -8,17 +8,17 @@ public class StopCommand extends Command {
 	
 	public StopCommand(){
 		this.name = "stop";
-		this.description = "Stoppt das gesamte Netzwerk, alle Server eines Spielmodus oder einen einzelnen Server.";
+		this.description = "Stopps the whole network, each gameserver of a specific gamemode or a specific gameserver.";
 	}
 	
 	@Override
 	public void onCommand(Sender sender, String[] args){
 		
 		if(args.length < 1){
-			Main.log.write("Fehlendes Argument!");
-			Main.log.write("  >> -all um das Netzwerk zu stoppen");
-			Main.log.write("  >> -gamemode <gamemode> um alle server eines Spielmodus zu stoppen");
-			Main.log.write("  >> -server <server> um einen Server zu stoppen");
+			Main.log.write("Missing argument!");
+			Main.log.write("  >> -all to stop the whole network");
+			Main.log.write("  >> -gamemode <gamemode> to stop each gameserver of the specific gamemode");
+			Main.log.write("  >> -server <server> to stop a specific server");
 			return;
 		}
 		
@@ -27,7 +27,7 @@ public class StopCommand extends Command {
 				System.exit(0);
 			}
 			else{
-				Main.log.write("Unbekannter Parameter oder fehlendes Argument!");
+				Main.log.write("Unknown parameter or missing argument!");
 				return;
 			}
 		}
@@ -42,7 +42,7 @@ public class StopCommand extends Command {
 						return;
 					}
 					
-					Main.log.write("Spielmodus nicht Gefunden!");
+					Main.log.write("Couldn't find that gamemode!");
 				}
 			}
 			

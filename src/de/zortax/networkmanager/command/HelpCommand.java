@@ -6,7 +6,7 @@ public class HelpCommand extends Command {
 	
 	public HelpCommand(){
 		this.name = "help";
-		this.description = "Zeigt die Beschreibungen aller Befehle an.";
+		this.description = "Shows alls commands and their description";
 		this.usage = "help";
 	}
 	

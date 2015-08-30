@@ -9,8 +9,8 @@ public class AddGameserverCommand extends Command {
 	
 	public AddGameserverCommand(){
 		this.name = "addserver";
-		this.description = "Fügt manuell einen Gameserver hinzu und startet ihn. Er wird NICHT in der Config gespeichert. Diesen Befehl nur für Testzwecke nutzen.";
-		this.usage = "addserver <Startbefehl>";
+		this.description = "Starts a new server manually. Doesn't add it to the config, use this for testing only!";
+		this.usage = "addserver <start-command>";
 	}
 	
 	@Override

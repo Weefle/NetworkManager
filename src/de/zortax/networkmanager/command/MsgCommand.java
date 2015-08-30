@@ -8,8 +8,8 @@ public class MsgCommand extends Command {
 	
 	public MsgCommand(){
 		this.name = "msg";
-		this.description = "Sendet eine Nachricht an alle Gameserver";
-		this.usage = "msg <Nachricht>";
+		this.description = "Sends a message to each gameserver";
+		this.usage = "msg <message>";
 	}
 	
 	@Override

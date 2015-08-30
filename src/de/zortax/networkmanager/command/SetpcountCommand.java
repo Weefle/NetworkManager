@@ -8,8 +8,8 @@ public class SetpcountCommand extends Command {
 	
 	public SetpcountCommand(){
 		this.name = "setpcount";
-		this.description = "Sign-Update Befehl für Lobbyserver (nur Gameserver)";
-		this.usage = "Irrelevant";
+		this.description = "Sign-Update for Lobbyservers (only gameservers)";
+		this.usage = "-";
 	}
 	
 	@Override
@@ -19,7 +19,7 @@ public class SetpcountCommand extends Command {
 				for(Gamemode c : Main.man.modes){
 					for(Gameserver c1 : c.servers){
 						if(c1.isLobby()){
-							Main.log.write("Sende Sign-Updatebefehl an " + c1.getGamemode() + c1.getId() + "...");
+							Main.log.write("Sending Sign-Updatecommand to " + c1.getGamemode() + c1.getId() + "...");
 							if(args.length == 2)
 								c1.sendCommand("setsign " + ((Gameserver) sender).getGamemode() + " " + ((Gameserver) sender).getGamemode() + ((Gameserver) sender).getId() + " " + args[0] + " " + args[1] + " HUB");
 							if(args.length == 3)
@@ -28,10 +28,10 @@ public class SetpcountCommand extends Command {
 					}
 				}
 			}else{
-				Main.log.write("Ungültige Argumente! (" + sender.name + ")");
+				Main.log.write("Invalid argumentes! (" + sender.name + ")");
 			}
 		}else{
-			Main.log.write("Dieser Befehl kann nur von Gameservern ausgeführt werden!");
+			Main.log.write("This command can only be executed by gameservers!");
 		}
 	}
 

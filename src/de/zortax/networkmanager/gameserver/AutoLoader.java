@@ -36,7 +36,7 @@ public class AutoLoader {
 			//for(String cu : c){
 			for(int i = 0; i < c.size(); i++){
 				//if(i <= Main.mainconfig.getInt("autoload_server_per_game_count")){
-					Main.log.write("Ein Gameserver wird gestartet...");
+					Main.log.write("Starting a gameserver...");
 					Main.man.allservers.add(new Gameserver(c.get(i), i + 1));
 					
 					//i++;
@@ -61,7 +61,7 @@ public class AutoLoader {
 			br.add(new BufferedReader(c));
 		}
 		
-		Main.log.write("Lade Autostart-Dateien...");
+		Main.log.write("Loading Autostart-files...");
 		String line;
 		ArrayList<String> tmp = new ArrayList<>();
 		
