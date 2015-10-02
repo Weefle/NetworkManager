@@ -14,12 +14,12 @@ public class InputThread extends Thread {
 	ArrayList<String> argList;
 	Sender sender;
 	
-	public InputThread(InputStream instream, Commander cmder, Sender sender_){
+	public InputThread(InputStream instream, Commander cmder, Sender sender){
 		instr = instream;
 		in = new Scanner(instr);
 		commander = cmder;
 		argList = new ArrayList<>();
-		sender = sender_;
+		this.sender = sender;
 	}
 	
 	@Override

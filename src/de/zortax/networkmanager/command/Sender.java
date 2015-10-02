@@ -2,7 +2,7 @@ package de.zortax.networkmanager.command;
 
 public class Sender {
 	
-	private boolean started;
+	public boolean started;
 	public InputThread it;
 	public Commander commander;
 	public String name;

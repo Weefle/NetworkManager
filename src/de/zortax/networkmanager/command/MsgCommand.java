@@ -10,6 +10,7 @@ public class MsgCommand extends Command {
 		this.name = "msg";
 		this.description = "Sends a message to each gameserver";
 		this.usage = "msg <message>";
+		this.description = "gameserver.msg";
 	}
 	
 	@Override

@@ -10,6 +10,7 @@ public class SetpcountCommand extends Command {
 		this.name = "setpcount";
 		this.description = "Sign-Update for Lobbyservers (only gameservers)";
 		this.usage = "-";
+		this.permission = "gameserver.setpcount";
 	}
 	
 	@Override

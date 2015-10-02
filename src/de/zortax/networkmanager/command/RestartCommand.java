@@ -9,11 +9,12 @@ import de.zortax.networkmanager.main.Main;
 public class RestartCommand
   extends Command
 {
-  public RestartCommand()
-  {
-    this.name = "restart";
-    this.description = "Restarts a server";
-    this.usage = "restart <id>";
+  public RestartCommand(){
+	  this.name = "restart";
+	  this.description = "Restarts a server";
+	  this.usage = "restart <id>";
+      this.permission = "gameserver.restart";
+
   }
   
   public void onCommand(Sender sender, String[] args)

@@ -1,0 +1,11 @@
+Permission name - If client...
+
+
+system.help - can see a list of all commands with their description and so on
+system.stop - can stop things
+system.debug - can see debug stuff...
+
+gameserver.console - can see gameserver consoles
+gameserver.sendcmd - can send commands to the gameserver
+gameserver.msg - can send Chat-Messages to a gameserver
+gameserver.restart - can restart gameservers

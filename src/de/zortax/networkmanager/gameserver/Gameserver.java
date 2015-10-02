@@ -42,6 +42,7 @@ public class Gameserver extends Sender {
 	
 	@Override
 	public void startSender(){
+		this.started = true;
 		it.start();
 	}
 	
@@ -74,6 +75,10 @@ public class Gameserver extends Sender {
 	
 	public boolean isStarted(){
 		return isstarted;
+	}
+
+	public InputStream getInputStream(){
+		return in;
 	}
 	
 	public void restart() throws IOException{

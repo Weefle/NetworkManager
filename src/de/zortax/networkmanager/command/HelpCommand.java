@@ -8,6 +8,7 @@ public class HelpCommand extends Command {
 		this.name = "help";
 		this.description = "Shows alls commands and their description";
 		this.usage = "help";
+		this.permission = "system.help";
 	}
 	
 	@Override

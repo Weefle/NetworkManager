@@ -11,6 +11,7 @@ public class DebugCommand extends Command {
 		this.name = "debug";
 		this.description = "List all servers and their state";
 		this.usage = "debug";
+		this.permission = "system.debug";
 	}
 	
 	@Override

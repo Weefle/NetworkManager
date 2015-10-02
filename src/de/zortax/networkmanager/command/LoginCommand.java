@@ -9,6 +9,7 @@ public class LoginCommand extends Command{
 		this.name = "login";
 		this.description = "Log in of gameservers. Can't be used by console";
 		this.usage = "login <gamemode> <ID> <phase>";
+		this.permission = "gameserver.login";
 	}
 	
 	@Override

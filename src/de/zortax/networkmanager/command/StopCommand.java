@@ -9,6 +9,7 @@ public class StopCommand extends Command {
 	public StopCommand(){
 		this.name = "stop";
 		this.description = "Stopps the whole network, each gameserver of a specific gamemode or a specific gameserver.";
+		this.permission = "system.stop";
 	}
 	
 	@Override
