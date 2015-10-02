@@ -6,6 +6,7 @@ public class Command {
 	public String name;
 	public String description;
 	public String usage;
+	public String permission;
 	
 	
 	//Override
@@ -13,6 +14,9 @@ public class Command {
 		
 		//example
 		this.name = "default";
+		this.description = "sample description";
+		this.usage = "usage explanation";
+		this.permission = "basic.defaultcmd";
 		
 	}
 
